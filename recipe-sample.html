@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cook With Me - Single Recipe</title>
+    <link rel="shortcut icon" href="assets/logo_icon.png">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class = "navbar">
+        <ul>
+            <li>
+                <a href = "about.html"><img src = "assets/logo.png" id="logo"></a>
+            </li>
+            <div class="linkbuttons">
+            <li>
+                <a href = "homepage.html"><i class="fa fa-home"></i></a>
+            </li>
+            <li>
+                <a href = "recipes.html"><i class ="fa fa-book"></i></a>
+            </li>
+            <li>
+                <a href = "php/profile.php"><i class="fa fa-user"></i></a>
+            </li>
+            <li>
+                <a href = "upload.html"><i class="fa fa-upload"></i></a>
+            </li>
+            </div>
+        </ul>
+    </div>
+    
+
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="assets/pancake.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Banana & Chia Oat Pancakes</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Eu augue ut lectus arcu. Leo in vitae turpis massa sed elementum tempus. 
+                Lectus nulla at volutpat diam ut venenatis tellus in metus. 
+                Sollicitudin nibh sit amet commodo nulla facilisi. 
+                Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. 
+                Eu scelerisque felis imperdiet proin.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>30 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>15 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>6 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="tag-template.html">beef</a>
+              <a href="tag-template.html">breakfast</a>
+              <a href="tag-template.html">pancakes</a>
+              <a href="tag-template.html">food</a>
+            </p>
+          </article>
+        </section>
+
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Eu augue ut lectus arcu.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Eu augue ut lectus arcu. 
+                Leo in vitae turpis massa sed elementum tempus. Lectus nulla at volutpat diam ut venenatis tellus in metus.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Eu augue ut lectus arcu. 
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">1 1/2 cups dry pancake mix</p>
+              <p class="single-ingredient">1/2 cup flax seed meal</p>
+              <p class="single-ingredient">1 cup skim milk</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Hand Blender</p>
+              <p class="single-tool">Large Heavy Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="search-text"> 
+        <div class="container">
+          <div class="row text-center">
+          
+            <div class="form">
+                <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                 <form id="search-form" class="form-search form-horizontal">
+                     <input type="text" class="input-search" placeholder="Email Address">
+                     <button type="submit" class="btn-search">Submit</button>
+                 </form>
+             </div>
+             <p>© Cook With Me <span id="year"></span> . All Rights Reserved</p>
+         
+           </div>         
+        </div>     
+     </div>
+     <script type="text/javascript">
+        // for the footer's year
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
